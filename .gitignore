@@ -1,0 +1,7 @@
+Pipfile*
+input/**
+output/**
+tmp/
+tmp/**
+djvu_to_epub/
+djvu_to_epub/**
