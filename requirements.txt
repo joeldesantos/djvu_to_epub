@@ -1,0 +1,3 @@
+-e git://github.com/aerkalov/ebooklib.git@855ae481d1a56ddc4ea19643d8d89f4244a0551b#egg=EbookLib
+lxml==4.2.3
+six==1.11.0
