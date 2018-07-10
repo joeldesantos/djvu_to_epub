@@ -1,5 +1,15 @@
-djvu_to_epub
-Code to change a DJVU book, currently only the OCR layer, to EPUB format.
+About djvu_to_epub
+==============
+
+djvu_to_epub will be a public library to convert a DJVU document, currently only the OCR layer, to EPUB format.
 
 License
+=======
+
 djvu_to_epub is licensed under the AGPL license.
+
+
+Author
+=======
+
+Joel de Santos
