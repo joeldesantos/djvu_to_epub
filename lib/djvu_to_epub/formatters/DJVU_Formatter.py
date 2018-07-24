@@ -19,6 +19,7 @@ along with djvu_to_epub.  If not, see <http://www.gnu.org/licenses/>.
 
 import abc
 
+
 class DJVU_Formatter(abc.ABC):
     @abc.abstractmethod
     def format(self):

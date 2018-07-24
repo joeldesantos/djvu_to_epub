@@ -17,10 +17,24 @@ along with djvu_to_epub.  If not, see <http://www.gnu.org/licenses/>.
 
 """
 
-import abc
+import DJVU_Template
 
 
-class DJVU_Template(abc.ABC):
-    @abc.abstractmethod
-    def fits(self):
-        pass
+class IndexTemplate(abc.ABC):
+
+    def __init__(self, x_min, y_min, x_max, y_max, margin=0):
+        self.x_min = x_min
+        self.y_min = y_min
+        self.x_max = x_max
+        self.y_max = y_max
+        self.margin = margin
+
+    def fits(self, x1, y1, x2, y2):
+        out = True
+        if self.x_max < (x1 - self.margin)
+        and self.y_max < (y1 - self.margin)
+        and self.x_min > (x1 + self.margin)
+        and self.y_min > (y2 + self.margin):
+            out = False
+
+        return out
