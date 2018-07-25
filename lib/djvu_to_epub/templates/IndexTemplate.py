@@ -22,19 +22,19 @@ import DJVU_Template
 
 class IndexTemplate(abc.ABC):
 
-    def __init__(self, x_min, y_min, x_max, y_max, margin=0):
-        self.x_min = x_min
-        self.y_min = y_min
-        self.x_max = x_max
-        self.y_max = y_max
+    def __init__(self, lrx, lry, tlx, tly, margin=0):
+        self.lrx = lrx
+        self.lry = lry
+        self.tlx = tlx
+        self.tly = tly
         self.margin = margin
 
-    def fits(self, x1, y1, x2, y2):
+    def fits(self, lrx, lry, tlx, tly):
         out = True
-        if self.x_max < (x1 - self.margin)
-        and self.y_max < (y1 - self.margin)
-        and self.x_min > (x1 + self.margin)
-        and self.y_min > (y2 + self.margin):
+        if self.lrx < (lrx - self.margin)
+        and self.lry < (lry - self.margin)
+        and self.tlx > (tlx + self.margin)
+        and self.tly > (tly + self.margin):
             out = False
 
         return out
